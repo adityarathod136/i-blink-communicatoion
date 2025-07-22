@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Communication Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #5cc799;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: black;
+    }
+
+    h2 {
+      text-align: center;
+      color: black;
+    }
+
+    .section {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .section img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    .oled-display {
+      background: black;
+      height: 400px;
+      color: lime;
+      font-family: monospace;
+      padding: 10px 20px;
+      font-size: 20px;
+      border-radius: 8px;
+      margin-top: 10px;
+      animation: blink 1s step-end infinite alternate;
+      text-align: center;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .component {
+      margin-top: 10px;
+    }
+
+    .component img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 8px;
+    }
+
+    .name {
+      background-color: white;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .info {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Patient Communication Project</h1>
+  <h2>Project Name - Communication System</h2>
+
+  <div class="section">
+    <h2>Project Overview</h2>
+    <p>
+      This project is designed to help patients who cannot speak or move easily to communicate using eye blinks.
+      Each blink is detected by an IR sensor and interpreted by a NodeMCU connected to an OLED display.
+      It sends messages based on the number of blinks: 1 Blink = Normal, 2 Blinks = I am Hungry, 3 Blinks = Emergency.
+    </p>
+    <a href="https://freeimage.host/i/Fwwi46J">
+      <img src="https://iili.io/Fwwi46J.th.jpg" alt="Project Overview Image">
+    </a>
+  </div>
+
+  <div class="section">
+    <h2>Live OLED Message Simulation</h2>
+    <p>This shows how a blink is converted to message on OLED:</p>
+    <div class="oled-display">1 Blink → Normal</div>
+  </div>
+
+  <div class="section">
+    <h2>Components Used</h2>
+
+    <div class="component">
+      <h3>Real Project Image</h3>
+      <a href="https://freeimage.host/i/FwI0VOQ">
+        <img src="https://iili.io/FwI0VOQ.th.jpg" alt="Real Project Image">
+      </a>
+    </div>
+
+    <div class="component">
+      <h3>NodeMCU</h3>
+      
+        <img src="node.jpg" alt="NodeMCU">
+      </a>
+    </div>
+
+    <div class="component">
+      <h3>Arduino Nano</h3>
+    
+        <img src="nono.jpg" alt="Arduino Nano">
+      </a>
+    </div>
+
+    <div class="component">
+      <h3>OLED Display</h3>
+    
+        <img src="oled.jpg" alt="OLED Display">
+      </a>
+    </div>
+
+    <div class="component">
+      <h3>IR Sensor</h3>
+  
+        <img src="ir.jpg" alt="IR Sensor">
+      </a>
+    </div>
+
+    <div class="component">
+      <h3>Sound Buzzer</h3>
+      
+        <img src="buzzer.jpg" alt="Sound Buzzer">
+      </a>
+    </div>
+
+    <div class="component">
+      <h3>Power Bank</h3>
+      <a href="https://freeimage.host/i/Fwxcy3x">
+        <img src="bank.jpg" alt="Power Bank">
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>How It Works</h2>
+    <p>
+      The IR sensor detects the blink pattern and sends data to NodeMCU. The OLED displays the message accordingly.
+      This same message is also reflected on the website display for demonstration. The system is simple, portable, and effective for real-time patient communication without any voice.
+    </p>
+
+    <h2>More Info</h2>
+    <p class="info">
+      In India, millions of people suffer from severe <u>physical and neurological conditions such as semi-coma, coma, locked-in syndrome (LIS), partial or full paralysis, neurological disorders, post-stroke disabilities, and age-related</u> speech impairments.
+      According to national health data, <u>over 500,000 people are affected by brain strokes every year, with 30–40% of them losing their ability to speak or move properly. Around 250,000 individuals are estimated to be in a semi-comatose or locked-in state.
+      Additionally, more than 10 million elderly people</u> require daily assistance, many of whom struggle to communicate their basic needs.
+      Our communication board-based project can become a lifeline for such individuals — enabling them to express essential needs like “I need water,” “I need a doctor,” or “I am in pain” without speaking.
+      This system not only makes life easier for patients but also provides significant relief to caregivers and families.
+    </p>
+  </div>
+
+</body>
+</html>
