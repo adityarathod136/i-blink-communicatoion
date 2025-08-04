@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>i-Blink Communication</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="manifest" href="mainfest.json">
+  
+  
+</head>
+<body>
+  <header>
+    <h1>i-Blink Communication</h1>
+  </header>
+
+  <main>
+    <!-- Project Description -->
+    <section class="info">
+      <h3>How it works</h3>
+      <ul>
+        <li>IR sensor detects blinks</li>
+        <li>Microcontroller sends messages</li>
+        <li>Firebase stores and syncs data</li>
+        <li>Website displays it in real-time</li>
+      </ul>
+    </section>
+
+    <!-- Image Upload Placeholders -->
+    <section class="images">
+      <div class="img-box">
+        <h3>System Diagram</h3>
+        <img src="digram.jpg" alt="Upload diagram here"/>
+      </div>
+      <div class="img-box">
+        <h3>Real Project Photo</h3>
+        <img src="real.jpg" alt="Upload project image here"/>
+      </div>
+    </section>
+
+    <!-- Real-time message display -->
+    <section class="realtime">
+      <h2>Live Messages</h2>
+      <div id="messageDisplay">Loading latest messages...</div>
+    </section> 
+
+    <section class="info">
+      <h2>how it works</h2>
+      <p>The IR sensor detects the blink pattern and sends data to NodeMCU. The OLED displays the message accordingly. This same message is also reflected on the website display for demonstration. The system is simple, portable, and effective for real-time patient communication without any voice.
+
+      </p>
+
+      <h3>project info</h3>
+       <p>In India, millions of people suffer from severe physical and neurological conditions such as semi-coma, coma, locked-in syndrome (LIS), partial or full paralysis, neurological disorders, post-stroke disabilities, and age-related speech impairments. According to national health data, over 500,000 people are affected by brain strokes every year, with 30–40% of them losing their ability to speak or move properly. Around 250,000 individuals are estimated to be in a semi-comatose or locked-in state. Additionally, more than 10 million elderly people require daily assistance, many of whom struggle to communicate their basic needs. Our communication board-based project can become a lifeline for such individuals — enabling them to express essential needs like “I need water,” “I need a doctor,” or “I am in pain” without speaking. This system not only makes life easier for patients but also provides significant relief to caregivers and families.</p>
+    </section>
+
+     
+  
+  </main>
+
+  <!-- Add to Home Screen Button -->
+  <button id="a2hsButton" hidden>Add to Home Screen</button>
+
+  <!-- Firebase + JS -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

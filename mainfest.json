@@ -1,0 +1,21 @@
+{
+    "name": "I-Blink Communication",
+    "short_name": "I-Blink",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ff0055",
+    "icons": [
+      {
+        "src": "sun.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "sun.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
